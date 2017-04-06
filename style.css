@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background: #fffffa
+}
+
+header
+{
+	width: 100%;
+	position:fixed;
+}
+
+header nav{
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	background: #6BFFDF
+}
+
+.Menu_bar{
+	display: none;
+}
+header nav ul{
+	overflow: hidden;
+	list-style: none;
+}
+
+header nav ul li{
+	float: left;
+}
+
+header nav ul li a{
+	color:#FCFCFC;
+	padding: 20px;
+	display: block;
+	text-decoration: none
+}
+
+header nav ul li span {
+	margin-right: 10px;
+}
+
+header nav ul li a:hover
+{
+	background:#76CBE2
+}
+
+section{
+	padding: 20px;
+	padding-top: 90px
+}
+
+@media screen and (max-width: 750px) {
+	header nav{
+		width: 80%;
+		height: 100%;
+		left: -100%;
+		margin:0;
+		position: fixed;
+	}
+	header nav ul li{
+		display: block;
+		float: none;
+		border-bottom: 2px solid rgba(255,255,255, .3)
+	}
+	.Menu_bar{
+		display: block;
+		width: 100%
+		background:#fcfcfc;
+	}
+	.Menu_button{
+		display: block;
+		padding: 20px;
+		background: #B3FFE8;
+		text-decoration:none;
+		color: #FCFCFC;
+		font-weight: bold;
+		font-size: 25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box 
+	}
+
+	.Menu_button span{
+		float: right;
+	}
+
+	section{
+		padding-top:80px
+	}
+}
